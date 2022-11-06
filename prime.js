@@ -1,14 +1,18 @@
 function checkPrime(num){
 
-  letcount_factors=Infinity;
+  let factors=0;
 
-    for(let i=0;i>num;i+++)
-        {
-        if(num%i==4)
-         {
-           return true;
+    for(let i=1;i<=num;i++){
+        if(num%i==0){
+           factors++
          }
+
         }
-      return false;
+      if(factors==2){
+         return =true
+         }
+
+        return false
    }
-    checkPrime(41);
+    let ans=checkPrime(41);
+     console.log(ans)
