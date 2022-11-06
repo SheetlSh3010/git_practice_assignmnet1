@@ -1,5 +1,6 @@
 function checkPrime(number){
 
+
   let count_factors=0;
 
     for(let i=1;i<=number;i++)
@@ -7,8 +8,11 @@ function checkPrime(number){
         if(number%i==0)
          {
            count_factors++;
+
          }
+
         }
+
    if(count_factors==2)
       {
          return true;
@@ -24,3 +28,4 @@ function checkPrime(number){
      else{
         console.log("Not a Prime number");
       }
+
