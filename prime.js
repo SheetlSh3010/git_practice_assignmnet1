@@ -1,14 +1,26 @@
-function checkPrime(num){
+function checkPrime(number){
 
-  letcount_factors=Infinity;
+  let count_factors=0;
 
-    for(let i=0;i>num;i+++)
+    for(let i=1;i<=number;i++)
         {
-        if(num%i==4)
+        if(number%i==0)
          {
-           return true;
+           count_factors++;
          }
+        }
+   if(count_factors==2)
+      {
+         return true;
         }
       return false;
    }
-    checkPrime(41);
+
+    let answer=checkPrime(41);
+    if(answer==true)
+       {
+          console.log("Prime number");
+       }
+     else{
+        console.log("Not a Prime number");
+      }
